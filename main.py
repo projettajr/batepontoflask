@@ -11,6 +11,8 @@ app = Flask(__name__)
 @app.route("/home/")
 def hello_world():
     return "<p>Hello, World!</p>"
+
+app.run()
 while True:
     try:
         
