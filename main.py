@@ -370,7 +370,7 @@ while True:
                         
                         chat_id = 1154633217
                         resposta = 'Reiniciei aq, viu'
-                        responder2(resposta, chat_id)
+                        #responder2(resposta, chat_id)
                     except:
                         sleep(5)
                         print('loucura')
