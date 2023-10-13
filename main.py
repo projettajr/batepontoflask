@@ -1,4 +1,5 @@
 from time import sleep
+from flask import Flask
 import datetime
 import json
 import sys
@@ -21,6 +22,12 @@ while True:
             def restart_program():
                 python = sys.executable
                 os.execl(python, python, * sys.argv)
+
+            app = Flask(__name__)
+
+            @app.route("/home")
+            def hello_world():
+                return "<p>Hello, World!</p>"
 
             while True:
                 try:
