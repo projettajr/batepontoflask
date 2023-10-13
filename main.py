@@ -6,6 +6,11 @@ import sys
 import os
 
 print('ini')
+app = Flask(__name__)
+
+@app.route("/home/")
+def hello_world():
+    return "<p>Hello, World!</p>"
 while True:
     try:
         
@@ -23,11 +28,7 @@ while True:
                 python = sys.executable
                 os.execl(python, python, * sys.argv)
 
-            app = Flask(__name__)
-
-            @app.route("/home")
-            def hello_world():
-                return "<p>Hello, World!</p>"
+            
 
             while True:
                 try:
