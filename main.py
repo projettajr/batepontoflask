@@ -7,12 +7,13 @@ import os
 
 print('ini')
 app = Flask(__name__)
-
-@app.route("/home/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-
+@app.route("/")
+@app.route("/index")
+def index():
+    return "Hello, World!"
+print('drt')
 app.run()
+print('ery')
 while True:
     try:
         
