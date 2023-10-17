@@ -365,7 +365,7 @@ def index():
                                         resposta = 'Puts! Não reconheci o começo da mensagem. 😅\nSe precisar de ajuda, clica em /help ou /start'
                                         responder2(resposta, chat_id)
                                         
-                                    return "Hello, World!"
+                                    #return "Hello, World!"
                     except:
                         print('ihh')
                         try:
@@ -381,10 +381,10 @@ def index():
                             worksheet.update_cell(2,5,"1")
                             worksheet.update_cell(2,6,update_id)
                             restart_program()
-                            return "Hello, World!"
+                            #return "Hello, World!"
                         except:
                             restart_program()
-                            return "Hello, World!"
+                            #return "Hello, World!"
             except:
                 def restart_program():
                     python = sys.executable
@@ -392,14 +392,15 @@ def index():
                 sleep(5)
                 print('antefinal')
                 sys.exit()
-                return "Hello, World!"    
+                #return "Hello, World!"    
         except:
             print('last')
             break
-            return "Hello, World!"
-    return "Hello, World!"
-    python = sys.executable
-    os.execl(python, python, * sys.argv)
+            #return "Hello, World!"
+    #return "Hello, World!"
+    #python = sys.executable
+    #os.execl(python, python, * sys.argv)
+    print('eel')
 
     
 print('drt')
